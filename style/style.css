@@ -13,6 +13,9 @@ header{
 main{
     background-color: #7FFFD4;
     height: 45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer{
@@ -33,14 +36,8 @@ img{
 }
 
 .container{
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.flex-header{
-    display: flex;
-    align-items: center;
+    height: 600px;
+    width: 600px;
 }
 
 .flex-container{
@@ -54,7 +51,23 @@ img{
     justify-content: space-between;
 }
 
+.flex-header{
+    display: flex;
+    align-items: center;
+}
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .button{
     padding: 0 2rem;
     font-size: 1rem;
+}
+
+.square{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid black;
 }
