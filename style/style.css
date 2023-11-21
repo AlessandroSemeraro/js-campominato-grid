@@ -71,3 +71,7 @@ img{
     height: calc(100% / 10);
     border: 1px solid black;
 }
+
+.clicked-blue{
+    background-color: blue;
+}
