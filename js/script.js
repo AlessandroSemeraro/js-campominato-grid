@@ -11,27 +11,23 @@ button.addEventListener("click", function() {
         mainContentEl.appendChild(createSquare());
     }
 
-    let newSquare=document.querySelector('div.square');
-    console.log(newSquare)
-
-    //BG CLICK//
-    newSquare.addEventListener("click", function() {
-        newSquare.classList.add('clicked-blue')
-    })
-
     //NUMBERS//
     for(let numberSquare = 1; numberSquare <= 100; numberSquare++){
        console.log(numberSquare)
     }
+    }); 
 
-}); 
 
-//
-
-//FUNCTION//
-function createSquare(){
+    //FUNCTION//
+    function createSquare(){
     const newSquareEl = document.createElement('div');
+
+    newSquareEl.addEventListener("click", function() {
+    newSquareEl.classList.add('clicked-blue')
+    })
+
     newSquareEl.classList.add('square');
+
     return newSquareEl
 }
 
