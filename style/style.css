@@ -61,6 +61,12 @@ img{
     flex-wrap: wrap;
 }
 
+.flex-aj-cent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .button{
     padding: 0 2rem;
     font-size: 1rem;

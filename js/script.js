@@ -1,34 +1,32 @@
 const button = document.querySelector('button');
-console.log(button)
+
+const mainContentEl=document.querySelector('main section.container');
 
 //click event//
 button.addEventListener("click", function() {
-    
-    const mainContentEl=document.querySelector('main section.container');
-    console.log(mainContentEl)
+
+    mainContentEl.innerHTML='';
 
     for(let i = 1; i <= 100; i++){
-        mainContentEl.appendChild(createSquare());
-    }
+        const newSquare = createSquare();
+       
+        mainContentEl.appendChild(newSquare);
 
-    //NUMBERS//
-    for(let numberSquare = 1; numberSquare <= 100; numberSquare++){
-       console.log(numberSquare)
-    }
-    }); 
-
-
+        const contentSquare = i;
+        newSquare.innerHTML = contentSquare;
+        
+        newSquare.addEventListener('click',function(){
+        newSquare.classList.toggle('clicked-blue'); 
+        console.log(contentSquare);
+        }
+)}
+})
+  
 //FUNCTION//
 function createSquare(){
 const newSquareEl = document.createElement('div');
-
-newSquareEl.addEventListener("click", function() {
-newSquareEl.classList.toggle('clicked-blue');
-})
-
 newSquareEl.classList.add('square');
-
+newSquareEl.classList.add('flex-aj-cent');
 return newSquareEl
 }
-
 
