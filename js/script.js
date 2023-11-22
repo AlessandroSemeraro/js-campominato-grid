@@ -18,17 +18,17 @@ button.addEventListener("click", function() {
     }); 
 
 
-    //FUNCTION//
-    function createSquare(){
-    const newSquareEl = document.createElement('div');
+//FUNCTION//
+function createSquare(){
+const newSquareEl = document.createElement('div');
 
-    newSquareEl.addEventListener("click", function() {
-    newSquareEl.classList.add('clicked-blue')
-    })
+newSquareEl.addEventListener("click", function() {
+newSquareEl.classList.toggle('clicked-blue');
+})
 
-    newSquareEl.classList.add('square');
+newSquareEl.classList.add('square');
 
-    return newSquareEl
+return newSquareEl
 }
 
 
